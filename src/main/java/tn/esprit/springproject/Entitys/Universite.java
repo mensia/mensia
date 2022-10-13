@@ -1,14 +1,18 @@
 package tn.esprit.springproject.Entitys;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Set;
+
 @Entity
 
-public class Universite {
+public class Universite implements Serializable {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private int idUniversite ;
         private String nomUniversite ;
+        @OneToMany
+        Set<Departement> departementSet ;
 }
+
+
