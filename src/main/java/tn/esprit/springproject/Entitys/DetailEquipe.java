@@ -1,9 +1,16 @@
 package tn.esprit.springproject.Entitys;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 
 public class DetailEquipe implements Serializable {
     @Id

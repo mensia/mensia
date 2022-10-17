@@ -1,10 +1,18 @@
 package tn.esprit.springproject.Entitys;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+
 
 public class Universite implements Serializable {
         @Id
