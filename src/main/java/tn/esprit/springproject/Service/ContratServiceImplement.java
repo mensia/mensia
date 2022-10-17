@@ -8,10 +8,11 @@ import tn.esprit.springproject.Repository.ContratReposirory;
 
 import java.util.List;
 @Service
-@AllArgsConstructor // si il n ya pas de @Autowired
+// @AllArgsConstructor // si il n ya pas de @Autowired
 public class ContratServiceImplement implements IContratService {
 
-   // @Autowired non securise
+    @Autowired // non securise
+
     ContratReposirory contratReposirory ;
 
     @Override

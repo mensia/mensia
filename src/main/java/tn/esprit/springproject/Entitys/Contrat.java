@@ -11,8 +11,8 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor // constructeur avec tt les attribue
 @NoArgsConstructor // constructeur par default
-@RequiredArgsConstructor // construvteur avec seulment les nonull
-@Builder // constructeur avec autant d attribu que je desire
+//@RequiredArgsConstructor // construvteur avec seulment les nonull
+//@Builder // constructeur avec autant d attribu que je desire
 @ToString
 public class Contrat implements Serializable {
     @Id
