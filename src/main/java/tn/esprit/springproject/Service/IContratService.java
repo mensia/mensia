@@ -11,4 +11,5 @@ public interface IContratService {
     public Contrat updateContrat (Contrat contrat) ;
     public Contrat AddContrat (Contrat contrat);
 
+
 }
