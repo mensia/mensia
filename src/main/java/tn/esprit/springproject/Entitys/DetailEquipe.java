@@ -1,5 +1,6 @@
 package tn.esprit.springproject.Entitys;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -19,7 +20,8 @@ public class DetailEquipe implements Serializable {
     private int salle ;
     private String thematique ;
 
-    @OneToOne(mappedBy = "detailEquipe") Equipe equipe ;
+    @OneToOne(mappedBy = "detailEquipe") @JsonIgnore Equipe equipe ; // jsonignore pour eviter une boucle infini dans l affichage
+
 
 }
 

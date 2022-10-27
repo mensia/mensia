@@ -22,7 +22,9 @@ public class Equipe implements Serializable {
     private Niveau niveau ;
     @ManyToMany(mappedBy = "equipeSet")
     List<Etudiant> etudiantListEquipe ;
-    @OneToOne DetailEquipe detailEquipe ;
+    @OneToOne(cascade = CascadeType.ALL) DetailEquipe detailEquipe ; // cascade pour que lor de la creation d une equipe on cree un detail instantanemet
+
+
 }
 
 

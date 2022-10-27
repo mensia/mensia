@@ -19,6 +19,7 @@ public class Departement implements Serializable {
         private int idDepartement ;
         private String nomDepartement ;
         @OneToMany( mappedBy = "dep")
+
         List<Etudiant> etudiantListDepartement ;
 }
 
